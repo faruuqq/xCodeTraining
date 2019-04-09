@@ -10,25 +10,27 @@ import UIKit
 //let totalMoney = "\(money) " + name
 
 
-class Pikachu {
-    private var strength: Int = 0 //encapsulation
-    var heathPoint: Int = 0
-    var defense: Int = 0
-    
+class Pokemon {
     func attack(){
-        print("attack")
+        print("inheritance attack")
     }
     
     func isDead() {
-        print("Game Over")
+        print("inheritance Game Over")
     }
+}
+
+class Pikachu : Pokemon{ //penulisan class diawali huruf besar (code of developer)
+    private var strength: Int = 30 //encapsulation
+    var heathPoint: Int = 100
+    var defense: Int = 25
     
 }
 
 class Pikampret {
-    var strength: Int = 0
-    var heathPoint: Int = 0
-    var defense: Int = 0
+    var strength: Int = 40
+    var heathPoint: Int = 100
+    var defense: Int = 10
     
     func attack() {
         print("attack")
@@ -42,4 +44,4 @@ class Pikampret {
 
 let player1 = Pikachu()
 player1.attack()
-
+player1.isDead()
