@@ -10,34 +10,48 @@ import UIKit
 //let totalMoney = "\(money) " + name
 
 
-class Pokemon {
-    func attack(){
-        print("inheritance attack")
+//class Pokemon {
+//    func attack(){
+//        print("inheritance attack")
+//    }
+//
+//    func isDead() {
+//        print("inheritance Game Over")
+//    }
+//}
+
+protocol Pokemon{ //polimorphism
+    func attack()
+    func isDead()
+}
+
+class Pikachu : Pokemon{
+    func attack() {
+        print("Pikachu Attack")
     }
     
     func isDead() {
-        print("inheritance Game Over")
+        print("Pikachu is Dead")
     }
-}
-
-class Pikachu : Pokemon{ //penulisan class diawali huruf besar (code of developer)
+    //penulisan class diawali huruf besar (code of developer)
     private var strength: Int = 30 //encapsulation
     var heathPoint: Int = 100
     var defense: Int = 25
     
+    
 }
 
-class Pikampret {
+class Pikampret : Pokemon{
     var strength: Int = 40
     var heathPoint: Int = 100
     var defense: Int = 10
     
     func attack() {
-        print("attack")
+        print("Pikampret attack")
     }
     
     func isDead() {
-        print("Game Over")
+        print("Pikampret Game Over")
     }
     
 }
@@ -45,3 +59,7 @@ class Pikampret {
 let player1 = Pikachu()
 player1.attack()
 player1.isDead()
+
+let player2 = Pikampret()
+player2.attack()
+player2.isDead()
