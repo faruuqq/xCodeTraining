@@ -19,13 +19,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
        
         
-      //  initialViewController  = MainClassViewController(nibName:"MainClassViewController",bundle:nil)
-       let frame = UIScreen.main.bounds
-        window = UIWindow(frame: frame)
+    //initialViewController  = //MainClassViewController(nibName:"MainClassViewController",bundle:nil)
+       //let frame = UIScreen.main.bounds
+        //window = UIWindow(frame: frame)
         
-        window?.rootViewController = MainCodeViewController()
+        //window?.rootViewController = MainCodeViewController()
         //window!.rootViewController = initialViewController
-        window!.makeKeyAndVisible()
+        //window!.makeKeyAndVisible()
         
         // Override point for customization after application launch.
         return true
